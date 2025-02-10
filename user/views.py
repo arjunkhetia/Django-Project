@@ -5,5 +5,11 @@ from django.http import HttpResponse
 def user(request):
     return HttpResponse("User works.")
 
-def user_by_id(request, id):
-    return HttpResponse(f'User by id : {id} works.')
+def userid_int(request, id):
+    return HttpResponse(f'User by id : {id} works. ID is Integer')
+
+def userid_str(request, id):
+    return HttpResponse(f'User by id : {id} works. ID is String')
+
+def userid_uuid(request, id):
+    return HttpResponse(f'User by id : {id} works. ID is UUID')
