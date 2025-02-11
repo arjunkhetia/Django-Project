@@ -4,4 +4,10 @@
 
 <h1>Welcome {{ user }}!</h1>
 
+<ul>
+    {% for item in array %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
 {% endblock %}

@@ -22,5 +22,6 @@ def user_home(request):
 
 def user_user(request):
     return render(request, 'user/user.html', {
-        'user': 'Arjun'
+        'user': 'Arjun',
+        'array': ['Python', 'Django', 'Flask']
     })
