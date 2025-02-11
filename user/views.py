@@ -17,5 +17,10 @@ def userid_str(request, id):
 def userid_uuid(request, id):
     return HttpResponse(f'User by id : {id} works. ID is UUID')
 
-def user_ui(request):
-    return render(request, 'user/user.html', {'user': 'Arjun'})
+def user_home(request):
+    return render(request, 'user/home.html')
+
+def user_user(request):
+    return render(request, 'user/user.html', {
+        'user': 'Arjun'
+    })
